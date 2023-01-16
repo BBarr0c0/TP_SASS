@@ -1,0 +1,311 @@
+@media only screen and (max-width: 1480px)
+{
+    h1 {
+       font-size: 15px;
+       top: 0px;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    .menu-a {
+        padding: 20px 0px 20px 0px;    /*avant modif avec chevron qui rotate 20px 15px 20px 15px*/
+        margin: auto;
+    }
+
+    .menu-a:last-child {
+        margin-right: -20px;
+    }
+
+    .arrayArticle {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .arrayArticle > article {
+        margin-bottom: 50px;
+    }
+
+    .arrayArticle > article:last-child {
+        grid-column: 1/span 2;
+    }
+}
+
+@media only screen and (max-width: 1024px)
+{
+    h2 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    #hautPage {
+        justify-content: flex-start;
+    }
+
+    #hautPage > .logo img{
+        height: 40px;  /*size du logo actipognon header*/
+        width: 100px;
+        margin-left: -20px;
+        padding: 30px 0;
+    }
+
+    .navbar #menu {
+        font-size: 15px;
+    }
+
+    .menu a {
+        padding: 25px 1px 25px 5px;
+    }
+
+    #menu {
+        margin-left: -30px;
+    }
+
+    .menu-a:last-child {
+        margin-right: 20px;
+        padding-right: 25px;
+    }
+
+    .sub-menu {
+        margin-left: -37px;
+    }
+
+    .arrayGame {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .arrayArticle {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        width: 100%;
+    }
+
+    .arrayArticle > article:nth-child(2) {
+        grid-row: 2;
+    }
+
+    .arrayArticle > article:last-child {
+        grid-row: 3;
+    }
+
+    #basPage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoRS > .icon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon > li{
+        margin-left: -40px;
+        margin-bottom: 10px;
+    }
+
+    .actifoot {
+        font-size: 10px;
+        justify-self: end;
+        align-self: flex-end;
+        margin-right: -100px;
+    }
+
+    .actifoot + .logo img{
+        display: flex;
+        width: 200px;
+    }
+
+    /*------A propos-----*/
+
+    .propos {
+        margin: 150px 100px;
+        font-size: 20px;
+    }
+
+    aside {
+        width: 50%;
+    }
+
+    .imgValues {
+        height: 450px;
+    }
+
+    /*------jeux.html------*/
+
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #article1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #article2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #article3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boutique > article h3{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 860px) 
+{
+    /*-------header----------*/
+    #hautPage {
+       justify-content: space-around;
+    }
+
+    nav label {
+        display: block;
+        cursor: pointer;
+    }
+    
+    #menu {
+        display: none;
+        flex-direction: column;
+    }
+    
+    .menu li a {
+        border-bottom: 1px dashed grey;
+        font-size: 40px;
+        padding: 55px;
+    }
+
+    .menu li {
+        text-align: center;
+        margin-left: -270px;
+    }
+
+    #toggle:checked + #menu {
+        display: block;
+        position: fixed;
+    }
+
+    .jeux .menu-a {
+        margin-left: 5px;
+    }
+
+    .apropos .menu-a {
+        padding: 55px;
+        margin-left: 5px;
+    }
+
+    .support .menu-a {
+        padding: 55px;
+        margin-left: 5px;
+    }
+
+    .sub-menu li {
+        display: none;
+    }
+
+    /*-------accueil---------*/
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .videoplay {
+        height: 500px;
+    }
+
+    .arrayGame {
+        grid-template-columns: 1fr;
+    }
+
+    textarea {
+        resize:both
+    }
+
+    .arrayArticle > article {
+        width: 60%;
+        justify-self: center;
+    }
+
+    /*-------A propos--------*/
+
+    .arrayHistoire {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .aside {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        box-shadow: inset 0px 0px 5px 5px #ccfa0027;
+        border-radius: 50%;
+        padding: 50px;
+        margin-top: -20px;
+        font-size: 16px;
+    }
+
+    .propos {
+        font-size: 15px;
+        margin: 150px 50px;
+    }
+
+    .deNous {
+        border: none;
+        padding: 0;
+    }
+
+    .imgValues {
+        height: 350px;
+    }
+
+    .presentation {
+        border: none;
+    }
+
+    .imgbj {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Boris {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .Jonathan {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 340px) /*extrêmement important et indispensable*/
+{
+    .scret {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    .main {
+        margin-top: 0;
+    }
+
+    h2, p, .video, .bestGame, .bestArticle, header, footer, section, article, form {
+        display: none;
+    }
+}

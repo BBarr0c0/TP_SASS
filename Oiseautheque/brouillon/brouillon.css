@@ -1,0 +1,237 @@
+/*
+.centerMenu a {        
+    display: block;
+    padding: 16px 30px;
+}
+
+.idNavBar a {
+    display: block; 
+}
+*/
+
+
+/* PAR DEFAUT BANNIERE AVANT MODIF EN CREANT LE THEME DARK
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    width: 50%;
+}
+*/
+
+
+/*PAR DEFAUT AVANT MODIF EN CREANT LE THEME DARK
+main {
+    75%;                  avant mise a jour pour le theme dark
+    margin-left: 12vw;    avant mise a jour pour le theme dark
+}
+
+#welcome {
+margin-top: 5vh;          avant mise a jour pour le theme dark
+}
+*/
+
+/*********DIVERS THEME QUE J'AI DEPUIS UN PEU PLUS GENERALISE GARDE AU CAS OU***********/
+
+/*Theme dark pour presentation*/
+/*
+#theme:checked ~ main #welcome, #theme:checked ~ main #welcome h1, #theme:checked ~ main #welcome strong, #theme:checked ~ main #welcome p, #theme:checked ~ main #welcome li {
+    background-color: var(--color-backtextdark);
+    color: var(--color-light);
+}
+
+#theme:checked ~ main #welcome:hover, #theme:checked ~ main #welcome:hover h1, #theme:checked ~ main #welcome:hover strong, #theme:checked ~ main #welcome:hover p, #theme:checked ~ main #welcome:hover li {
+    background-color: var(--color-hovertextdark);
+}
+*/
+/*Theme dark pour description carte*/
+/*
+#theme:checked ~ main .miniDescription, #theme:checked ~ main .miniDescription h3, #theme:checked ~ main .miniDescription p, #theme:checked ~ main .miniDescription span {
+    background-color: var(--color-backtextdark);
+    color: var(--color-light);
+}
+
+#theme:checked ~ main .miniDescription:hover, #theme:checked ~ main .miniDescription:hover h3, #theme:checked ~ main .miniDescription:hover p, #theme:checked ~ main .miniDescription:hover span {
+    background-color: var(--color-hovertextdark);
+}
+*/
+/*Theme dark pour section article*/
+/*
+#theme:checked ~ main #sectArticle article, #theme:checked ~ main #sectArticle article h3, #theme:checked ~ main #sectArticle article p, #theme:checked ~ main #sectArticle article a {
+    background-color: var(--color-backtextdark);
+    color: var(--color-light);
+}
+
+#theme:checked ~ main #sectArticle article:hover, #theme:checked ~ main #sectArticle article:hover h3, #theme:checked ~ main #sectArticle article:hover p, #theme:checked ~ main #sectArticle article:hover a {
+    background-color: var(--color-hovertextdark);
+}
+*/
+/*Theme dark pour section quizz*/
+/*
+#theme:checked ~ main #sectQuizz article, #theme:checked ~ main #sectQuizz article h3, #theme:checked ~ main #sectQuizz article p {
+    background-color: var(--color-backtextdark);
+    color: var(--color-light);
+}
+
+#theme:checked ~ main #sectQuizz article:hover, #theme:checked ~ main #sectQuizz article:hover h3, #theme:checked ~ main #sectQuizz article:hover p {
+    background-color: var(--color-hovertextdark);
+}
+*/
+
+
+
+
+
+/*---------------------------------------------------------------------------*/
+
+/*Carroussel slider automatique   peut servir d'idée pour plus tard
+
+#birdSlider {           
+    margin: 10vh 0;
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    width: calc(300px*5);
+    animation: glisse 5s infinite;
+}
+
+.slide {
+    float: left;
+}
+
+.slide img {
+    display: block;
+    width: 200px;
+    height: 300px;  
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-300px);
+    }
+    40% {
+        transform: translateX(-600px);
+    }
+    60% {
+        transform: translateX(-900px);
+    }
+    80% {
+        transform: translateX(-1200px);
+    }
+    100% {
+        transform: translateX(0x);
+    }
+}*/
+
+/*---------------------------------------------------------------------------*/
+
+/*
+.slide {
+    justify-content: left;*/
+    /*height: auto;*/
+    /*position: relative;*/
+    /*scroll-behavior: smooth;  peut servir pour rendre plus doux la navigation avec des boutons (actuellement sert à rien)
+}
+
+.slide::-webkit-scrollbar {       permet de faire disparaite la scroll bar
+    -webkit-appearance: none;       déconseillé d'après vs code
+}
+
+.itemSlide {
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.itemSlide img {
+    display: block;
+    max-width: 100vw;  On cherche a faire en sorte que les images restent à la même taille qu'importe la résolution
+    max-height: 28vh;
+}
+*/
+
+/*slides::after et slides::before 414px avant modif height:auto .miniDescription peut pas utiliser % problème avec mobile*/
+
+
+
+
+
+
+
+
+/*******************************
+----------MAIN CONNEXION----------
+******************************/
+
+/*  SANS FLEX ET AVEC DES DIVS
+
+.sectConnexion {
+    text-align: center;
+    padding: 1vh 0;
+}
+
+#formConnexion {
+    border: 2px dashed var(--color-dark);
+    padding: 4vh 0;
+    border-radius: 15%;
+    background-color: var(--color-backtext);
+}
+
+#formConnexion label, #formConnexion input, #formConnexion div {
+    background-color: var(--color-backtext);
+}
+
+.divPassword label {
+    padding-right: 27px;
+}
+
+.sectConnexion h2 {
+    padding: 5vh 0;
+}
+
+.sectConnexion div {
+    padding: 2vh 0;
+}
+
+.btnSubmit input {
+    padding: 1vh 1vw;
+    border: 5px solid var(--color-borderor);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--color-backtext);
+}
+
+#formConnexion input:hover {
+    background-color: var(--color-hovertext);
+}
+
+.divAutresConnexion {
+    margin: 10vh;
+    padding: 50vw;
+    border: rgba(124, 66, 66, 0.527) solid 5px;
+    border-radius: 10% 5% 10% 5%;
+}
+
+.divAutresConnexion a:hover {
+    color: var(--color-borderor);
+}
+
+Theme dark bas connexion
+
+
+#theme:checked ~ main #formConnexion ~ .divAutresConnexion, #theme:checked ~ main .divAutresConnexion div, #theme:checked ~ main .divAutresConnexion a {
+    background-color: var(--color-dark);
+}
+*/
+
+
+
+
+
+

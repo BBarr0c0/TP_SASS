@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../logos/faviconpie.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Accueil - Oiseauthèque</title>
+</head>
+<body>
+
+    <!-------HEADER-------->
+
+    <input id="theme" type="checkbox" title="Changer de thème"><!--POUR FAIRE THEME EN CSS-->
+    <header>
+        <div class="navBar">
+            <div class="logoNavBar">
+                <a href="./accueil.html">
+                    <img src="../logos/logoPieTrans.png" alt="Une pie vue d'en haut avec la France en fond" title="Accueil">
+                    <p>Accueil</p>
+                </a>
+            </div>
+            <nav class="centerNavBar">
+                <label for="toggle">☰</label>
+                <input type="checkbox" id="toggle">
+                <ul class="centerMenu">
+                    <li class="liOiseautheque">
+                        <a href="./l'oiseauthèque.html">L'oiseauthèque</a>
+                    </li>
+                    <li class="liSauvetage">
+                        <a href="./sauvetage.html">Sauvetage</a>
+                    </li>
+                    <li class="liForum">
+                        <a href="./forum-les-pies-bavardes.html">Forum</a>
+                    </li>
+                    <li class="liJeux">
+                        <a href="./jeux.html">Jeux</a>
+                    </li>
+                    <li class="liArticles">
+                        <a href="./articles.html">Articles</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="idNavBar">
+                <ul class="menu">
+                    <li class="liConnexion">
+                        <a href="./se-connecter.html">S'identifier</a>
+                        <ul class="subMenu">
+                            <li class="liSubMenu">
+                                <a href="./se-connecter.html">Se connecter</a>
+                            </li>
+                            <li class="liSubMenu">
+                                <a href="./creer-un-compte.html" >Créer un compte</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="theme">
+                        <div class="themeL">
+                            <img src="../logos/logoThemeSombre.png" alt="btnJN" title="Changer de thème">
+                        </div>
+                        <div class="themeD">
+                            <img src="../logos/logoThemeClair.png" alt="btnJN" title="Changer de thème">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <img id="imgDay" src="../logos/BanniereClaireTitreOiseautheque_50.jpg" alt="oiseaudiurne">
+            <img id="imgNight" src="../logos/BanniereSombreTitreOiseautheque_50.jpg" alt="oiseaunocturne">
+        </div>
+    </header>
+
+    <!--------MAIN-------->
+
+    <main>
+        <div class="centralContainer"> <!--Créé pour le changement de thème-->
+            <section id="welcome">
+                <h1>Bienvenu sur <strong>l'oiseauthèque</strong> !</h1>
+                <p>Ce site a pour but de promouvoir les oiseaux de la France métropolitaine et leur sauvegarde.</p>
+                <p>Il se veut accessible et ludique, pour que tout les âges puissent s'y retrouver afin de partager leur passion de l'ornithologie ou simplement leur émerveillement des créatures à plumes, ainsi que leur protection.</p>
+                <p>Vous trouverez sur ce site:</p> 
+                <ul>
+                    <li>Des fiches d'oiseaux détaillés</li>
+                    <li>Des conseils lorsque vous trouvez un oiseau</li>
+                    <li>Des coordonnées pour avoir des conseils professionnels ou un lieu pour amener un oiseau blessé</li>
+                    <li>Un forum baptisé "les pies bavardes"</li>
+                    <li>Un espace quizz pour tester vos connaissances</li>
+                    <li>Des articles</li>
+                </ul>
+                <p>N'hésitez pas à créer un compte et participer autour de notre passion commune !</p>
+                <p>Bonne navigation sur notre site !</p>
+            </section>
+
+            <!-----DEBUT SLIDER----->
+
+            <div class="titleSlider">
+                <h2>Une sélection d'oiseaux:</h2>
+            </div>
+            <div id="birdSlider"> 
+                <div class="slides"> 
+                    <div class="slide"> 
+                        <div class="itemSlide">
+                            <a href="./l'oiseauthèque.html">
+                                <img src="../images/pieVertical.jpg" alt="Pie" title="Pie">
+                                <div class="miniDescription">
+                                    <h3>Pie</h3>
+                                    <p>Famille: <span>Corvidae</span></p>
+                                    <p>Alimentation: <span>Omnivore</span></p>
+                                    <p>Envergure: <span>52-62cm</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itemSlide">
+                            <a href="./l'oiseauthèque.html">
+                                <img src="../images/chouetteEffraieVertical.jpg" alt="Chouette effraie" title="Chouette effraie">
+                                <div class="miniDescription">
+                                    <h3>Chouette Effraie</h3>
+                                    <p>Famille: <span>Tytonidae</span></p>
+                                    <p>Alimentation: <span>Carnivore</span></p>
+                                    <p>Envergure: <span>90-107cm</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itemSlide">
+                            <a href="./l'oiseauthèque.html">
+                                <img src="../images/rougeGorgeVertical.jpg" alt="Rouge Gorge" title="Rouge-gorge">
+                                <div class="miniDescription">
+                                    <h3>Rouge-gorge</h3>
+                                    <p>Famille: <span>Muscicapidae</span></p>
+                                    <p>Alimentation: <span>Insectivore</span></p>
+                                    <p>Envergure: <span>20-22cm</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itemSlide">
+                            <a href="./l'oiseauthèque.html">
+                                <img src="../images/geaiDesChenesVertical.jpg" alt="Geai des chênes" title="Geai des chênes">
+                                <div class="miniDescription">
+                                    <h3>Geai des chênes</h3>
+                                    <p>Famille: <span>Corvidae</span></p>
+                                    <p>Alimentation: <span>Omnivore</span></p>
+                                    <p>Envergure: <span>45-55cm</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itemSlide">
+                            <a href="./l'oiseauthèque.html">
+                                <img src="../images/goeland.jpg" alt="Goeland argenté" title="Goeland argenté">
+                                <div class="miniDescription">
+                                    <h3>Goeland argenté</h3>
+                                    <p>Famille: <span>Laridae</span></p>
+                                    <p>Alimentation: <span>Omnivore</span></p>
+                                    <p>Envergure: <span>120-160cm</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itemSlide">
+                            <a href="./l'oiseauthèque.html">
+                                <img src="../images/grandCorbeauVertical.jpg" alt="Grand corbeau" title="Grand corbeau">
+                                <div class="miniDescription">
+                                    <h3>Grand Corbeau</h3>
+                                    <p>Famille: <span>Corvidae</span></p>
+                                    <p>Alimentation: <span>Omnivore</span></p>
+                                    <p>Envergure: <span>100-150cm</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itemSlide">
+                            <a href="./l'oiseauthèque.html">
+                                <img src="../images/grandeAigrette.jpg" alt="Grande Aigrette" title="Grande Aigrette">
+                                <div class="miniDescription">
+                                    <h3>Grande Aigrette</h3>
+                                    <p>Famille: <span>Ardeidae</span></p>
+                                    <p>Alimentation: <span>Carnivore</span></p>
+                                    <p>Envergure: <span>130-170cm</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="itemSlide">
+                            <a href="./l'oiseauthèque.html">
+                                <img src="../images/mesangeBleuVertical.jpg" alt="Mésange bleue" title="Mésange bleue">
+                                <div class="miniDescription">
+                                    <h3>Mésange bleue</h3>
+                                    <p>Famille: <span>Paridae</span></p>
+                                    <p>Alimentation: <span>Insectivore</span></p>
+                                    <p>Envergure: <span>12-14cm</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----FIN SLIDER----->
+
+            <section id="sectArticle">
+                <h2>Les derniers articles:</h2>
+                <article>
+                    <h3>Titre de l'article 1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ex accusamus ratione doloribus aspernatur, provident eius voluptate nostrum. Sit perspiciatis eos nam. Temporibus ratione nulla sunt voluptatem, modi ut.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ex accusamus ratione doloribus aspernatur, provident eius voluptate nostrum. Sit perspiciatis eos nam. Temporibus ratione nulla sunt voluptatem, modi ut.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ex accusamus ratione doloribus aspernatur, provident eius voluptate nostrum. Sit perspiciatis eos nam. Temporibus ratione nulla sunt voluptatem, modi ut.</p>
+                    <a href="">Voir plus...</a>
+                </article>
+                <article>
+                    <h3>Titre de l'article 2</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ex accusamus ratione doloribus aspernatur, provident eius voluptate nostrum. Sit perspiciatis eos nam. Temporibus ratione nulla sunt voluptatem, modi ut.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ex accusamus ratione doloribus aspernatur, provident eius voluptate nostrum. Sit perspiciatis eos nam. Temporibus ratione nulla sunt voluptatem, modi ut.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ex accusamus ratione doloribus aspernatur, provident eius voluptate nostrum. Sit perspiciatis eos nam. Temporibus ratione nulla sunt voluptatem, modi ut.</p>
+                    <a href="">Voir plus...</a>
+                </article>
+                <article>
+                    <h3>Titre de l'article 3</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ex accusamus ratione doloribus aspernatur, provident eius voluptate nostrum. Sit perspiciatis eos nam. Temporibus ratione nulla sunt voluptatem, modi ut.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ex accusamus ratione doloribus aspernatur, provident eius voluptate nostrum. Sit perspiciatis eos nam. Temporibus ratione nulla sunt voluptatem, modi ut.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ex accusamus ratione doloribus aspernatur, provident eius voluptate nostrum. Sit perspiciatis eos nam. Temporibus ratione nulla sunt voluptatem, modi ut.</p>
+                    <a href="">Voir plus...</a>
+                </article>
+            </section>
+            <section id="sectQuiz">
+                <h2>Les derniers quiz:</h2>
+                <article>
+                    <h3>Titre du quiz</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quod eaque, ducimus nihil illo deserunt debitis consequatur aut aspernatur praesentium quo ad perspiciatis consequuntur at ut sit, voluptatum, aliquam quam!</p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-------FOOTER--------->
+
+    <footer>
+        <div class="logoFooter">
+            <a href="./accueil.html">
+                <img src="../logos/logoPieTrans.png" alt="pie" title="Accueil">
+            </a>
+        </div>
+        <div class="centralFooter">
+            <h5>Copyright 2022 
+                <a href="./accueil.html">Oiseauthèque.fr</a> - Tous droits réservés.
+            </h5>
+            <p>
+                <a href="./qui-sommes-nous.html"><span class="symbHoverFooter">|</span>Qui sommes-nous ?<span class="symbHoverFooter">|</span></a>
+            </p>
+            <p>
+                <a href="./contact.html"><span class="symbHoverFooter">|</span>Contact<span class="symbHoverFooter">|</span></a>
+            </p>
+        </div>
+        <div class="reseaux">
+            <h5>Nos réseaux:</h5>
+            <a href="https://www.facebook.com">
+                <img src="../logos/logoFacebook.png" alt="lgfacebook" title="Facebook">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="../logos/logoTwitter.png" alt="lgtwitter" title="Twitter">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
